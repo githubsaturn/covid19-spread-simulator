@@ -27,6 +27,7 @@
 set -e
 
 BUILD_DIR="./build"
+BASE_URL="covid19.dev.itskasra.com"
 
 echo "#################################################"
 echo "Changing directory to 'BUILD_DIR' $BUILD_DIR ..."
@@ -50,6 +51,7 @@ if [ -z "$(git status --porcelain)" ]; then
     echo "Nothing to commit" && \
     exit 0
 fi && \
+echo $BASE_URL > CNAME && \
 git add . && \
 git commit -m 'Deploy to GitHub Pages' && \
 echo "REMOTE_BRANCH: $REMOTE_BRANCH" && \
