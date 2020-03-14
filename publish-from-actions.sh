@@ -53,7 +53,7 @@ fi && \
 git add . && \
 git commit -m 'Deploy to GitHub Pages' && \
 echo "REMOTE_BRANCH: $REMOTE_BRANCH" && \
-# git push --force $REMOTE_REPO master:$REMOTE_BRANCH && \
+git push --force $REMOTE_REPO master:$REMOTE_BRANCH && \
 rm -fr .git && \
 cd $GITHUB_WORKSPACE && \
 echo "Content of $BUILD_DIR has been deployed to GitHub Pages."
