@@ -1,5 +1,7 @@
 # COVID-19 Spread Simulator
 
+See in action: http://covid19.dev.itskasra.com/
+
 This is a simple Monte Carlo based simulation to show the effect of various factors on how the virus spread in our communities. 
 
 ## Flattening the Curve
