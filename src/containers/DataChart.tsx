@@ -74,7 +74,11 @@ export default class DataChart extends PureComponent<
                             >
                                 <CartesianGrid strokeDasharray="3 3" />
                                 <XAxis label="Day" angle={45} dy={10} height={80} dataKey="x" />
-                                <YAxis hide={true} domain={[0, 100]} />
+                                <YAxis
+                                    label={{ value: 'Number of Cases', angle: -90 }}
+                                    tick={false}
+                                    domain={[0, 100]}
+                                />
                                 <Legend onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeave} />
                                 <Line
                                     name="Total Infected"
