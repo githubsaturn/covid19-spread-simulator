@@ -1,5 +1,5 @@
 {
-  "name": "COVID-19 Simulator",
+  "name": "covid-19-simulator",
   "version": "0.1.0",
   "private": true,
   "lint-staged": {
