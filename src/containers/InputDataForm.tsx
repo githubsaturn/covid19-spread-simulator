@@ -21,7 +21,7 @@ export default class InputDataForm extends Component<{
                                 type="number"
                                 min={0}
                                 max={100}
-                                value={formInputData.closeCircleSize}
+                                value={formInputData.closeCircleSize || ''}
                                 onChange={e => {
                                     const innerData = Utils.copyObject(this.props.formInputData)
                                     innerData.closeCircleSize = Number(e.target.value)
@@ -39,7 +39,7 @@ export default class InputDataForm extends Component<{
                                 type="number"
                                 min={0}
                                 max={100}
-                                value={formInputData.randomPeopleMetDaily}
+                                value={formInputData.randomPeopleMetDaily || ''}
                                 onChange={e => {
                                     const innerData = Utils.copyObject(this.props.formInputData)
                                     innerData.randomPeopleMetDaily = Number(e.target.value)
@@ -57,7 +57,7 @@ export default class InputDataForm extends Component<{
                                 type="number"
                                 min={0}
                                 max={100}
-                                value={formInputData.dayWithoutSymptoms}
+                                value={formInputData.dayWithoutSymptoms || ''}
                                 onChange={e => {
                                     const innerData = Utils.copyObject(this.props.formInputData)
                                     innerData.dayWithoutSymptoms = Number(e.target.value)
@@ -75,7 +75,7 @@ export default class InputDataForm extends Component<{
                                 type="number"
                                 min={0}
                                 max={100}
-                                value={formInputData.dayWithSymptoms}
+                                value={formInputData.dayWithSymptoms || ''}
                                 onChange={e => {
                                     const innerData = Utils.copyObject(this.props.formInputData)
                                     innerData.dayWithSymptoms = Number(e.target.value)
@@ -101,7 +101,7 @@ export default class InputDataForm extends Component<{
                                 suffix="%"
                                 min={0}
                                 max={100}
-                                value={formInputData.chanceOfDangerousContactWithCloseCirclePreSymptoms}
+                                value={formInputData.chanceOfDangerousContactWithCloseCirclePreSymptoms || ''}
                                 onChange={e => {
                                     const innerData = Utils.copyObject(this.props.formInputData)
                                     let newVal = Number(e.target.value)
@@ -124,7 +124,7 @@ export default class InputDataForm extends Component<{
                                 suffix="%"
                                 min={0}
                                 max={100}
-                                value={formInputData.chanceOfDangerousContactWithCloseCirclePostSymptoms}
+                                value={formInputData.chanceOfDangerousContactWithCloseCirclePostSymptoms || ''}
                                 onChange={e => {
                                     const innerData = Utils.copyObject(this.props.formInputData)
                                     let newVal = Number(e.target.value)
@@ -147,7 +147,7 @@ export default class InputDataForm extends Component<{
                                 suffix="%"
                                 min={0}
                                 max={100}
-                                value={formInputData.chanceOfDangerousContactWithRandomPeoplePreSymptoms}
+                                value={formInputData.chanceOfDangerousContactWithRandomPeoplePreSymptoms || ''}
                                 onChange={e => {
                                     const innerData = Utils.copyObject(this.props.formInputData)
                                     let newVal = Number(e.target.value)
@@ -170,7 +170,7 @@ export default class InputDataForm extends Component<{
                                 suffix="%"
                                 min={0}
                                 max={100}
-                                value={formInputData.chanceOfDangerousContactWithRandomPeoplePostSymptoms}
+                                value={formInputData.chanceOfDangerousContactWithRandomPeoplePostSymptoms || ''}
                                 onChange={e => {
                                     const innerData = Utils.copyObject(this.props.formInputData)
                                     let newVal = Number(e.target.value)
