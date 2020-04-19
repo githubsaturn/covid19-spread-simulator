@@ -1,8 +1,8 @@
-export const SIZE_CHANGED = "SIZE_CHANGED";
+export const SIZE_CHANGED = 'SIZE_CHANGED'
 
 export function emitSizeChanged() {
-  return {
-    type: SIZE_CHANGED,
-    payload: {}
-  };
+    return {
+        type: SIZE_CHANGED,
+        payload: {}
+    }
 }
